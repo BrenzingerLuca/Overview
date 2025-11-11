@@ -24,7 +24,7 @@ This repository contains the documentation and source code for our **autonomous 
 
 Our team engineered a comprehensive solution for self-driving within a simulated urban environment. The primary objective was to build a robust system capable of **real-time navigation, traffic light compliance, and collision avoidance** using **ROS (Robot Operating System)** and a **Unity-based simulator**.
 
-## Key Learnings & Project Highlights
+# Key Learnings & Project Highlights
 
 This project provided invaluable hands-on experience and a deep dive into advanced robotics and AI concepts:
 
@@ -36,7 +36,7 @@ This project provided invaluable hands-on experience and a deep dive into advanc
 *   **Git & Version Control:** Mastered collaborative codebase management using Git, including efficient handling of **large binary files with Git Large File Storage (Git LFS)** and maintaining a clean, effective project history.
 *   **Team Collaboration:** Successfully navigated the complexities of agile team development, clearly defining responsibilities, and seamlessly integrating individual software modules into a cohesive system.
 
-## My Contribution (Luca Brenzinger)
+# My Contribution (Luca Brenzinger)
 
 As a core team member, my primary responsibilities and contributions focused on critical areas of the system, demonstrating expertise in both development and optimization:
 
