@@ -18,7 +18,7 @@ ARM Cortex-M | Bare-Metal | RTOS | Driver Development | Debugging
 - GDB Automation Script – Register dumps, debugger scripts
 
 ---
-#🔹 Team23_I2ROS_2025: Autonomous Driving System (University Project)
+# 🔹 Team23_I2ROS_2025: Autonomous Driving System (University Project)
 
 This repository contains the documentation and source code for our **autonomous driving system**, developed as part of a university course on **Introduction to ROS** during the summer term of 2025.
 
