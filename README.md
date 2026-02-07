@@ -62,7 +62,7 @@ This project covers the entire robotics stack, from mechanical coordination to h
     *   **GUI-Control:** Asynchronous trajectory execution using **MoveIt2 and PySide6**.
     *   **Hardware-in-the-Loop (HIL):** Real-time manipulation via **analog potentiometers**, allowing the user to "teach" the robot movements.
 *   **Custom GUI (PI-Bot Control Center):** Designed and implemented a professional dashboard using **PySide6 (Qt)**. Key features include a **Sequence Recorder** to store/execute movement patterns and **real-time state synchronization** to prevent hardware jumps.
-*   **Low-Level Hardware Interfacing:** Developed custom nodes for the **MCP3008 ADC (I2C)** and **PCA9685 PWM (I2C)** to bridge the gap between analog sensors and the digital ROS2 environment.
+*   **Low-Level Hardware Interfacing:** Developed custom nodes for the **ADS7830 ADC (I2C)** and **PCA9685 PWM (I2C)** to bridge the gap between analog sensors and the digital ROS2 environment.
 *   **Kinematics & Digital Twin:** Created a precise **URDF model** and configured the **TF-tree** for real-time visualization in **RViz**, ensuring the digital twin perfectly reflects the physical state of the 3-DOF arm.
 *   **Motion Planning:** Integrated the **MoveIt2 framework** for **inverse kinematics (IK)** and collision-free path planning, utilizing custom service interfaces for **cartesian positioning**.
 
