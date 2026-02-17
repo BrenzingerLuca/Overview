@@ -10,7 +10,7 @@ Here, I showcase my work completed during university and personal projects.
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 ![C++](https://img.shields.io/badge/C++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 
-This repository contains the documentation and source code for our **autonomous driving system**, developed as part of a university course on **Introduction to ROS** during the summer term of 2025.
+This [repository](https://github.com/BrenzingerLuca/autonomous_driving_project) contains the documentation and source code for our **autonomous driving system**, developed as part of a university course on **Introduction to ROS** during the summer term of 2025.
 
 Our team engineered a comprehensive solution for self-driving within a simulated urban environment. The primary objective was to build a robust system capable of **real-time navigation, traffic light compliance, and collision avoidance** using **ROS (Robot Operating System)** and a **Unity-based simulator**.
 
@@ -41,7 +41,7 @@ This project provided invaluable hands-on experience and a deep dive into advanc
 ![alt text](https://img.shields.io/badge/-Raspberry%20Pi-C51A4A?style=for-the-badge&logo=Raspberry-Pi)
 ![alt text](https://img.shields.io/badge/Qt-%2341CD52.svg?style=for-the-badge&logo=Qt&logoColor=white)
 
-This repository contains the full source code and hardware configuration for the PI-Bot, a custom-built 3-DOF robotic arm. Developed as an end-to-end solo project, it demonstrates the integration of distributed software systems, hardware control, and a hybrid robot control system.
+This [repository](https://github.com/BrenzingerLuca/robotic_arm_project) contains the full source code and hardware configuration for the PI-Bot, a custom-built 3-DOF robotic arm. Developed as an end-to-end solo project, it demonstrates the integration of distributed software systems, hardware control, and a hybrid robot control system.
 The system is built on a distributed ROS2 architecture, where a workstation handles high-level motion planning and a Raspberry Pi 4 manages the low-level hardware abstraction layer.
 
 ## System Demo
