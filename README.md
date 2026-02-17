@@ -1,16 +1,11 @@
 # Luca's Engineering Portfolio
 
 Welcome to my GitHub portfolio!  
-Here, I showcase my work in **Embedded Systems** and different **Robotics**, completed during university and personal projects.
-
----
-#  Embedded Projects
-ARM Cortex-M | Bare-Metal | RTOS | Driver Development | Debugging  
-[Embedded_Projects Repository](https://github.com/BrenzingerLuca/Embedded-Projects)
+Here, I showcase my work completed during university and personal projects.
 
 ---
 #  Autonomous Driving Project (University Project)
-![ROS](https://img.shields.io/badge/ros2-%2322314E.svg?style=for-the-badge&logo=ros&logoColor=white)
+![ROS](https://img.shields.io/badge/ros-%2322314E.svg?style=for-the-badge&logo=ros&logoColor=white)
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) 
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 ![C++](https://img.shields.io/badge/C++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
@@ -31,8 +26,6 @@ This project provided invaluable hands-on experience and a deep dive into advanc
 *   **Team Collaboration:** Successfully navigated the complexities of agile team development, clearly defining responsibilities, and seamlessly integrating individual software modules into a cohesive system.
 
 ## My Contribution (Luca Brenzinger)
-
-As a core team member, my primary responsibilities and contributions focused on critical areas of the system, demonstrating expertise in both development and optimization:
 
 *   **Perception Module (Lead):** I led the design and implementation of key components within the perception pipeline. This included developing the `static_tf_ins_to_cameras` node for precise sensor frame transformations and configuring the `pointcloud.launch` file for robust 3D point cloud generation.
 *   **YOLOv8 Network Fine-Tuning & Data Augmentation:** I made significant contributions to the fine-tuning of the **YOLOv8 object detection model**. My work involved setting up and executing **data augmentation strategies** to enhance model generalization and training the network on custom simulation data for accurate car and traffic light detection.
@@ -61,7 +54,7 @@ This project covers the entire robotics stack, from mechanical coordination to h
 *   **Hybrid Control System:** Developed two distinct operational modes:
     *   **GUI-Control:** Asynchronous trajectory execution using **MoveIt2 and PySide6**.
     *   **Hardware-in-the-Loop (HIL):** Real-time manipulation via **analog potentiometers**, allowing the user to "teach" the robot movements.
-*   **Custom GUI (PI-Bot Control Center):** Designed and implemented a professional dashboard using **PySide6 (Qt)**. Key features include a **Sequence Recorder** to store/execute movement patterns and **real-time state synchronization** to prevent hardware jumps.
+*   **Custom GUI (PI-Bot Control Center):** Designed and implemented a dashboard using **PySide6 (Qt)**. Key features include a **Sequence Recorder** to store/execute movement patterns and **real-time state synchronization** to prevent hardware jumps.
 *   **Low-Level Hardware Interfacing:** Developed custom nodes for the **ADS7830 ADC (I2C)** and **PCA9685 PWM (I2C)** to bridge the gap between analog sensors and the digital ROS2 environment.
 *   **Kinematics & Digital Twin:** Created a precise **URDF model** and configured the **TF-tree** for real-time visualization in **RViz**, ensuring the digital twin perfectly reflects the physical state of the 3-DOF arm.
 *   **Motion Planning:** Integrated the **MoveIt2 framework** for **inverse kinematics (IK)** and collision-free path planning, utilizing custom service interfaces for **cartesian positioning**.
