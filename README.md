@@ -45,8 +45,10 @@ This [repository](https://github.com/BrenzingerLuca/robotic_arm_project) contain
 The system is built on a distributed ROS2 architecture, where a workstation handles high-level motion planning and a Raspberry Pi 4 manages the low-level hardware abstraction layer.
 
 ## System Demo
+<p align="center">
+  <img src="docs/gifs/2_blocks_robot_demo-overview_final.gif" width="800" alt="Projekt Demo">
+</p>
 
-![Uploading 2_blocks_robot_demo_low_volume.gif…]()
 
 
 
