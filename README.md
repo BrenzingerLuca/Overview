@@ -69,3 +69,4 @@ This project covers the entire robotics stack, from mechanical coordination to h
 ## Skills & Tools
 - **Languages:** C++, Python, bash, 
 - **Robotics:** ROS2, sensor integration, MoveIt2, URDF
+- **CAD:** Fusion 360
