@@ -67,8 +67,13 @@ This project provided invaluable hands-on experience and a deep dive into advanc
 ![CMake](https://img.shields.io/badge/CMake-%23064F8C.svg?style=for-the-badge&logo=cmake&logoColor=white)
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
-This [repository](https://github.com/BrenzingerLuca/PID-Controller) originated as a group project at the **Technical University of Munich (TUM)**. I am currently refactoring and extending the codebase to deepen my **C++ knowledge** and improve the software architecture beyond the original academic submission.
+This [repository](https://github.com/BrenzingerLuca/PID-Controller) features a **C++ based simulation** of a vehicle's cruise control system, leveraging an **object-oriented architecture** to implement a discrete **PID controller**.
 
+![Simulation Plot](docs/images/cruise_control_step_response.png) 
+**Figure 1:** Shows the simulated step response (0 to 20 m/s) with tuned parameters ($K_p = 5.0, K_i = 0.1, K_d = 0.5$).
+
+It originated as a group project at the **Technical University of Munich (TUM)**. I am currently refactoring and extending the codebase to deepen my **C++ knowledge** and improve the software architecture beyond the original academic submission. 
+s
 ## Key Highlights
 
 *   **Object-Oriented Implementation:** Clean separation of vehicle dynamics and PID control logic using an OOP approach.
