@@ -2,7 +2,35 @@
 
 Welcome to my GitHub portfolio!  
 Here, I showcase my work completed during university and personal projects.
+---
 
+#  PI-Bot: Distributed 3-DOF Robotic Arm (Personal Project)
+![alt text](https://img.shields.io/badge/ros2-%2322314E.svg?style=for-the-badge&logo=ros&logoColor=white)
+![alt text](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![alt text](https://img.shields.io/badge/C++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
+![alt text](https://img.shields.io/badge/-Raspberry%20Pi-C51A4A?style=for-the-badge&logo=Raspberry-Pi)
+![alt text](https://img.shields.io/badge/Qt-%2341CD52.svg?style=for-the-badge&logo=Qt&logoColor=white)
+
+This [repository](https://github.com/BrenzingerLuca/robotic_arm_project) contains the full source code and hardware configuration for the PI-Bot, a custom-built 3-DOF robotic arm. Developed as an end-to-end solo project, it demonstrates the integration of distributed software systems, hardware control, and a hybrid robot control system.
+The system is built on a distributed ROS2 architecture, where a workstation handles high-level motion planning and a Raspberry Pi 4 manages the low-level hardware abstraction layer.
+
+## System Demo
+<p align="center">
+  <img src="docs/gifs/2_blocks_robot_demo-overview_final.gif" width="800" alt="Projekt Demo">
+</p>
+
+## Technical Highlights & Implementation
+
+This project covers the entire robotics stack, from mechanical coordination to high-level software orchestration:
+
+*   **Distributed ROS2 Architecture:** Engineered a multi-node system where computation is split between a **PC (running MoveIt2 & GUI)** and a **Raspberry Pi 4 (Servo/ADC nodes)**, communicating seamlessly via **ROS2 Topics and SSH**.
+*   **Hybrid Control System:** Developed two distinct operational modes:
+    *   **GUI-Control:** Asynchronous trajectory execution using **MoveIt2 and PySide6**.
+    *   **Hardware-in-the-Loop (HIL):** Real-time manipulation via **analog potentiometers**, allowing the user to "teach" the robot movements.
+*   **Custom GUI (PI-Bot Control Center):** Designed and implemented a dashboard using **PySide6 (Qt)**. Key features include a **Sequence Recorder** to store/execute movement patterns and **real-time state synchronization** to prevent hardware jumps.
+*   **Low-Level Hardware Interfacing:** Developed custom nodes for the **ADS7830 ADC (I2C)** and **PCA9685 PWM (I2C)** to bridge the gap between analog sensors and the digital ROS2 environment.
+*   **Kinematics & Digital Twin:** Created a precise **URDF model** and configured the **TF-tree** for real-time visualization in **RViz**, ensuring the digital twin perfectly reflects the physical state of the 3-DOF arm.
+*   **Motion Planning:** Integrated the **MoveIt2 framework** for **inverse kinematics (IK)** and collision-free path planning, utilizing custom service interfaces for **cartesian positioning**.
 ---
 #  Autonomous Driving Project (University Project)
 ![ROS](https://img.shields.io/badge/ros-%2322314E.svg?style=for-the-badge&logo=ros&logoColor=white)
@@ -34,39 +62,15 @@ This project provided invaluable hands-on experience and a deep dive into advanc
 *   **Documentation:** I contributed to the comprehensive project documentation, providing detailed explanations of key modules and their functionalities to ensure clarity and maintainability.
 
 ---
-#  PI-Bot: Distributed 3-DOF Robotic Arm (Personal Project)
-![alt text](https://img.shields.io/badge/ros2-%2322314E.svg?style=for-the-badge&logo=ros&logoColor=white)
-![alt text](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![alt text](https://img.shields.io/badge/C++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
-![alt text](https://img.shields.io/badge/-Raspberry%20Pi-C51A4A?style=for-the-badge&logo=Raspberry-Pi)
-![alt text](https://img.shields.io/badge/Qt-%2341CD52.svg?style=for-the-badge&logo=Qt&logoColor=white)
+# C++ Autonomous Cruise Control Simulator (Personal Engineering Project)
+![C++](https://img.shields.io/badge/C++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
+![CMake](https://img.shields.io/badge/CMake-%23064F8C.svg?style=for-the-badge&logo=cmake&logoColor=white)
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
-This [repository](https://github.com/BrenzingerLuca/robotic_arm_project) contains the full source code and hardware configuration for the PI-Bot, a custom-built 3-DOF robotic arm. Developed as an end-to-end solo project, it demonstrates the integration of distributed software systems, hardware control, and a hybrid robot control system.
-The system is built on a distributed ROS2 architecture, where a workstation handles high-level motion planning and a Raspberry Pi 4 manages the low-level hardware abstraction layer.
+This [repository](https://github.com/BrenzingerLuca/PID-Controller) originated as a group project at the **Technical University of Munich (TUM)**. I am currently refactoring and extending the codebase to deepen my **C++ knowledge** and improve the software architecture beyond the original academic submission.
 
-## System Demo
-<p align="center">
-  <img src="docs/gifs/2_blocks_robot_demo-overview_final.gif" width="800" alt="Projekt Demo">
-</p>
+## Key Highlights
 
-
-
-
-## Technical Highlights & Implementation
-
-This project covers the entire robotics stack, from mechanical coordination to high-level software orchestration:
-
-*   **Distributed ROS2 Architecture:** Engineered a multi-node system where computation is split between a **PC (running MoveIt2 & GUI)** and a **Raspberry Pi 4 (Servo/ADC nodes)**, communicating seamlessly via **ROS2 Topics and SSH**.
-*   **Hybrid Control System:** Developed two distinct operational modes:
-    *   **GUI-Control:** Asynchronous trajectory execution using **MoveIt2 and PySide6**.
-    *   **Hardware-in-the-Loop (HIL):** Real-time manipulation via **analog potentiometers**, allowing the user to "teach" the robot movements.
-*   **Custom GUI (PI-Bot Control Center):** Designed and implemented a dashboard using **PySide6 (Qt)**. Key features include a **Sequence Recorder** to store/execute movement patterns and **real-time state synchronization** to prevent hardware jumps.
-*   **Low-Level Hardware Interfacing:** Developed custom nodes for the **ADS7830 ADC (I2C)** and **PCA9685 PWM (I2C)** to bridge the gap between analog sensors and the digital ROS2 environment.
-*   **Kinematics & Digital Twin:** Created a precise **URDF model** and configured the **TF-tree** for real-time visualization in **RViz**, ensuring the digital twin perfectly reflects the physical state of the 3-DOF arm.
-*   **Motion Planning:** Integrated the **MoveIt2 framework** for **inverse kinematics (IK)** and collision-free path planning, utilizing custom service interfaces for **cartesian positioning**.
-
-
-## Skills & Tools
-- **Languages:** C++, Python, bash, 
-- **Robotics:** ROS2, sensor integration, MoveIt2, URDF
-- **CAD:** Fusion 360
+*   **Object-Oriented Implementation:** Clean separation of vehicle dynamics and PID control logic using an OOP approach.
+*   **CMake Build System:** Professional project structure ensuring easy compilation and cross-platform compatibility.
+*   **Simulation & Visualization:** Full simulation pipeline with CSV data export and Python-based plotting for performance analysis.
