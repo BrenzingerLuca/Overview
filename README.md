@@ -71,10 +71,12 @@ This project provided invaluable hands-on experience and a deep dive into advanc
 This [repository](https://github.com/BrenzingerLuca/AI-for-Industry-Challenge) contains our solution to Intrinsic's **[AI for Industry Challenge](https://www.intrinsic.ai/events/ai-for-industry-challenge)**: a robot arm autonomously plugging SFP and SC network connectors into their ports. Competing as a two-person team against groups of up to ten, we built two complete, very different insertion pipelines over two rounds — a fully self-trained vision pipeline for Qualification, then a force-controlled policy for Phase 1 once port detection was handled by Intrinsic's FlowState.
 
 ## System Demo
-<p align="center">
-  <video src="https://github.com/user-attachments/assets/f5bd5886-9559-4a56-973c-9471196d7263" width="600" controls></video>
-</p>
-<p align="center"><em>Full insertion process — both connector types, end to end.</em></p>
+<table align="center">
+  <tr>
+    <td align="center"><video src="https://github.com/user-attachments/assets/24a9969e-ccff-41e1-bcb1-2e3e374ae856" width="360" controls></video><br><em>SC insertion</em></td>
+    <td align="center"><video src="https://github.com/user-attachments/assets/372e5b8e-c86d-4b76-b7c8-ba8532941530" width="360" controls></video><br><em>SFP insertion</em></td>
+  </tr>
+</table>
 
 ## Results
 
