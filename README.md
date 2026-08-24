@@ -62,6 +62,35 @@ This project provided invaluable hands-on experience and a deep dive into advanc
 *   **Documentation:** I contributed to the comprehensive project documentation, providing detailed explanations of key modules and their functionalities to ensure clarity and maintainability.
 
 ---
+# AI for Industry Challenge (Intrinsic Team Competition)
+![ROS](https://img.shields.io/badge/ros2-%2322314E.svg?style=for-the-badge&logo=ros&logoColor=white)
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)
+![YOLO](https://img.shields.io/badge/YOLOv8-111F68?style=for-the-badge&logo=Ultralytics&logoColor=white)
+
+This [repository](https://github.com/BrenzingerLuca/AI-for-Industry-Challenge) contains our solution to Intrinsic's **[AI for Industry Challenge](https://www.intrinsic.ai/events/ai-for-industry-challenge)**: a robot arm autonomously plugging SFP and SC network connectors into their ports. Competing as a two-person team against groups of up to ten, we built two complete, very different insertion pipelines over two rounds — a fully self-trained vision pipeline for Qualification, then a force-controlled policy for Phase 1 once port detection was handled by Intrinsic's FlowState.
+
+## System Demo
+<p align="center">
+  <video src="https://github.com/user-attachments/assets/f5bd5886-9559-4a56-973c-9471196d7263" width="600" controls></video>
+</p>
+<p align="center"><em>Full insertion process — both connector types, end to end.</em></p>
+
+## Results
+
+| Round | Approach | Result |
+|---|---|---|
+| Qualification | Own vision pipeline (YOLO port detection + triangulation) | 27 / 160 teams advanced |
+| Phase 1 | Intrinsic FlowState for perception, force-controlled insertion | **14 / 160 teams** |
+
+## Key Highlights
+
+*   **Custom Vision Pipeline (Qualification):** With no port detection provided, we labeled our own dataset and trained a **YOLOv8 keypoint model** to find each port's corners, then triangulated the multi-camera detections into a 3D port pose.
+*   **Residual Offset-Correction Model:** Trained a vision-based regressor on data from our own capture pipeline to correct residual pose error right before insertion — reused unchanged across both rounds.
+*   **Force-Controlled Insertion Policy (Phase 1):** Reworked the policy around **force control** after perception moved to FlowState — detecting contact, distinguishing a clean insertion from an edge catch, and recovering from snags without any camera input.
+*   **Spiral Search Strategy:** A two-stage spiral search under soft stiffness for final alignment once the plug is near the port opening, used as a fallback in both pipelines.
+
+---
 # C++ Autonomous Cruise Control Simulator (Personal Engineering Project)
 ![C++](https://img.shields.io/badge/C++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 ![CMake](https://img.shields.io/badge/CMake-%23064F8C.svg?style=for-the-badge&logo=cmake&logoColor=white)
