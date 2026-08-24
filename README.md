@@ -42,6 +42,9 @@ This [repository](https://github.com/BrenzingerLuca/autonomous_driving_project) 
 
 Our team engineered a comprehensive solution for self-driving within a simulated urban environment. The primary objective was to build a robust system capable of **real-time navigation, traffic light compliance, and collision avoidance** using **ROS (Robot Operating System)** and a **Unity-based simulator**.
 
+## System Demo
+[![Watch the demo](docs/images/autonomous_driving_tn.png)](https://www.youtube.com/watch?v=YZ5LkFzoBeQ&list=PLb2s0tWzXMe8aXW3xwLuRfRwQC2G1X5B0)
+
 ## Key Learnings & Project Highlights
 
 This project provided invaluable hands-on experience and a deep dive into advanced robotics and AI concepts:
